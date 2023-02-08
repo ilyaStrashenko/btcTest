@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
 
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css">
 
     <title>Btcflower</title>
@@ -27,7 +32,7 @@
                             <span class="burger__line line-tw"></span>
                         </div>
                         <li class="menu-top-item none ">
-                            <a id="menu" href="#" class="menu-top-link  ">Меню</a>
+                            <a id="menu" class="menu-top-link  ">Меню</a>
                         </li>
                         <li class="menu-top-item none">
                             <a href="./сatalog.html" class="menu-top-link">Каталог</a>
@@ -51,7 +56,7 @@
                             <a href="./personal.html" class="menu-top-link">Персональный подход</a>
                         </li>
                         <li class="menu-top-item blok-phone">
-                            <a href="tel:74994605340" class="social-item blok">
+                            <a href="#" class="social-item blok">
                                 <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -88,18 +93,6 @@
                                         fill="#FD3B4A" />
                                 </svg>
                             </a>
-                        </li>
-                        <li class="menu-top-item blok ">
-                            <a href="#" class="social-item card blok">
-                                <svg width="32" height="24" viewBox="0 0 32 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.13008 7.10593H29.7121C30.3649 7.10593 30.8427 7.72122 30.681 8.35366L28.7801 15.7877C28.4405 17.1156 27.2442 18.0445 25.8736 18.0445H9.02537M0 0.836685H4.65214C5.63535 0.836685 6.47274 1.55133 6.62728 2.52232L9.6467 21.4933C9.80125 22.4643 10.6386 23.179 11.6218 23.179H28.203"
-                                        stroke="black" stroke-width="1.5" />
-                                </svg>
-                                <span class="card-q blok">1</span>
-                            </a>
-                            <span class="card-sum blok">3550 ₽</span>
                         </li>
                     </ul>
 
@@ -183,147 +176,165 @@
                                     fill="#FD3B4A" />
                             </svg>
                         </a>
-                        <a href="#" class="social-item card">
+                        <a class="social-item card">
                             <svg width="32" height="24" viewBox="0 0 32 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M7.13008 7.10593H29.7121C30.3649 7.10593 30.8427 7.72122 30.681 8.35366L28.7801 15.7877C28.4405 17.1156 27.2442 18.0445 25.8736 18.0445H9.02537M0 0.836685H4.65214C5.63535 0.836685 6.47274 1.55133 6.62728 2.52232L9.6467 21.4933C9.80125 22.4643 10.6386 23.179 11.6218 23.179H28.203"
                                     stroke="black" stroke-width="1.5" />
                             </svg>
-                            <span class="card-q">1</span>
+                            <span id="card-q" class="card-q">0</span>
                         </a>
-                        <span class="card-sum ">3550 ₽</span>
+                        <div id="cardSum" class="card-sum ">0₽</div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu-blok" class="menu">
+                <div class="container">
+                    <div class="menu-block">
+                        <div class="menu-item">
+                            <ul class="menu-item-list">
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Акции</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Новинки</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Популярные</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Букеты</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Монобукеты</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Композиции</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Букеты невесты</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Вкусные подарки</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Новый год</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-item">
+                            <ul class="menu-item-list">
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Наборы шаров</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Мягкие игрушки </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Конфеты</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Топперы</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Вазы </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Эксспрес-доставка</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Индивидуальный заказ</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Свадьба под ключ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-item menu-item-line">
+                        </div>
+                        <div class="menu-item ">
+                            <img src="./img/map.webp" alt="" class="menu-img">
+                        </div>
+                        <div class="menu-item">
+                            <ul class="menu-item-list">
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">О компании</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Контакты </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Доставка</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Оплата</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Возврат </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Корпоративным клиентам </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Инструкция по уходу</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="list-item-link">Гарантия</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img id="menu-close" src="./img/close.webp" alt="Закрыть" class="menu-block-close">
+                    </div>
+                </div>
+            </div>
+            <div id="burger-blok" class="burger-blok">
+                <ul class="burger-blok-list">
+                    <li class="menu-top-item burger-blok-item">
+                        <a id="menu" href="#" class="menu-top-link ">Меню</a>
+                    </li>
+                    <li class="menu-top-item burger-blok-item">
+                        <a href="./сatalog.html" class="menu-top-link">Каталог</a>
+                    </li>
+                    <li class="menu-top-item burger-blok-item">
+                        <a href="./delivery.html" class="menu-top-link">Доставка</a>
+                    </li>
+                    <li class="menu-top-item burger-blok-item">
+                        <a href="./card.html" class="menu-top-link">Оплата</a>
+                    </li>
+                    <li class="menu-top-item burger-blok-item">
+                        <a href="./contacts.html" class="menu-top-link">Контакты</a>
+                    </li>
+                    <li class="menu-top-item burger-blok-item">
+                        <a href="./guarantee.html" class="menu-top-link">Гарантия</a>
+                    </li>
+                    <li class="menu-top-item burger-blok-item">
+                        <a href="./care.html" class="menu-top-link">Уход</a>
+                    </li>
+                    <li class="menu-top-item burger-blok-item">
+                        <a href="./personal.html" class="menu-top-link">Персональный подход</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="basket">
+                <div class="basket__conteiner">
+                    <h3 class="basket__title">Ваш заказ</h3>
+                    <div class="basket__content">
+                        <div class="basket__blok">
+                            <div class="empty">
+                                <span class="basket__empty ">Ваша корзина пуста</span>
+                                <button class="basket__catalog">В Каталог</button>
+                            </div>
+                        </div>
+                        <div class="backet__cardSum ">
+                            <p class="backet__text">Стоимость заказа:</p>
+                            <span class="backet__sum"></span>
+                        </div>
+                        <a href="#" class="backet__btn">Оформить заказ</a>
                     </div>
                 </div>
             </div>
         </header>
-        <div id="menu-blok" class="menu">
-            <div class="container">
-                <div class="menu-block">
-                    <div class="menu-item">
-                        <ul class="menu-item-list">
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Акции</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Новинки</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Популярные</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Букеты</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Монобукеты</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Композиции</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Букеты невесты</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Вкусные подарки</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Новый год</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="menu-item">
-                        <ul class="menu-item-list">
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Наборы шаров</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Мягкие игрушки </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Конфеты</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Топперы</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Вазы </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Эксспрес-доставка</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Индивидуальный заказ</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Свадьба под ключ</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="menu-item menu-item-line">
-                    </div>
-                    <div class="menu-item ">
-                        <img src="./img/map.webp" alt="" class="menu-img">
-                    </div>
-                    <div class="menu-item">
-                        <ul class="menu-item-list">
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">О компании</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Контакты </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Доставка</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Оплата</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Возврат </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Корпоративным клиентам </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Инструкция по уходу</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-item-link">Гарантия</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <img id="menu-close" src="./img/close.webp" alt="Закрыть" class="menu-block-close">
-                </div>
-            </div>
-        </div>
-        <div id="burger-blok" class="burger-blok">
-            <ul class="burger-blok-list">
-                <li class="menu-top-item burger-blok-item">
-                    <a id="menu" href="#" class="menu-top-link ">Меню</a>
-                </li>
-                <li class="menu-top-item burger-blok-item">
-                    <a href="./сatalog.html" class="menu-top-link">Каталог</a>
-                </li>
-                <li class="menu-top-item burger-blok-item">
-                    <a href="./delivery.html" class="menu-top-link">Доставка</a>
-                </li>
-                <li class="menu-top-item burger-blok-item">
-                    <a href="./card.html" class="menu-top-link">Оплата</a>
-                </li>
-                <li class="menu-top-item burger-blok-item">
-                    <a href="./contacts.html" class="menu-top-link">Контакты</a>
-                </li>
-                <li class="menu-top-item burger-blok-item">
-                    <a href="./guarantee.html" class="menu-top-link">Гарантия</a>
-                </li>
-                <li class="menu-top-item burger-blok-item">
-                    <a href="./care.html" class="menu-top-link">Уход</a>
-                </li>
-                <li class="menu-top-item burger-blok-item">
-                    <a href="./personal.html" class="menu-top-link">Персональный подход</a>
-                </li>
-            </ul>
-        </div>
         <main class="main">
             <section class="slider">
                 <div class="flex-wrraper">
@@ -413,184 +424,26 @@
             </section>
             <section class="popular">
                 <div class="container">
-                    <div class="popular-blok">
-                        <h2 class="popular-blok__title section__title">Популярные</h2>
-                        <div class="popular-blok__product">
-                            <div class="product-item">
-                                <img src="./img/section/populir/populir1.webp" alt="" class="product-item-img">
-                                <div class="popular-blok__screen screen__Hit"> Hit </div>
-                                <div class="blor-product">
-                                    <h3 class="product-item__title">Париж</h3>
-                                    <span class="product-item__subtitle">монобукет из пионов</span>
-                                    <span class="item-info__product">
-                                        Цветы: Пионы розовые, пионы белые, Эвкалипт, дизайнерская пленка
-                                    </span>
-                                    <span class="product-item__price">3500₽</span>
-                                    <a href="#" class="product-btn btn-catalog">В корзину</a>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <img src="./img/section/populir/populir2.webp" alt="" class="product-item-img">
-                                <div class="popular-blok__screen screen__Hit"> Hit </div>
-                                <div class="blor-product">
-                                    <h3 class="product-item__title">Париж</h3>
-                                    <span class="product-item__subtitle">монобукет из пионов</span>
-                                    <span class="item-info__product">
-                                        Цветы: Пионы розовые, пионы белые, Эвкалипт, дизайнерская пленка
-                                    </span>
-                                    <span class="product-item__price">3500₽</span>
-                                    <a href="#" class="product-btn btn-catalog">В корзину</a>
-                                </div>
-                            </div>
-                            <div class="product-item item-product">
-                                <img src="./img/section/populir/populir3.webp" alt="" class="product-item-img">
-                                <div class="popular-blok__screen screen__Hit"> Hit </div>
-                                <div class="blor-product">
-                                    <h3 class="product-item__title">Париж</h3>
-                                    <span class="product-item__subtitle">монобукет из пионов</span>
-                                    <span class="item-info__product">
-                                        Цветы: Пионы розовые, пионы белые, Эвкалипт, дизайнерская пленка
-                                    </span>
-                                    <span class="product-item__price">3500₽</span>
-                                    <a href="#" class="product-btn btn-catalog">В корзину</a>
-                                </div>
-                            </div>
-                            <div class="product-item item-product">
-                                <img src="./img/section/populir/populir4.webp" alt="" class="product-item-img">
-                                <div class="popular-blok__screen screen__Hit"> Hit </div>
-                                <div class="blor-product">
-                                    <h3 class="product-item__title">Париж</h3>
-                                    <span class="product-item__subtitle">монобукет из пионов</span>
-                                    <span class="item-info__product">
-                                        Цветы: Пионы розовые, пионы белые, Эвкалипт, дизайнерская пленка
-                                    </span>
-                                    <span class="product-item__price">3500₽</span>
-                                    <a href="#" class="product-btn btn-catalog">В корзину</a>
-                                </div>
-                            </div>
-                        </div>
+                    <h2 class="section__title">Популярные</h2>
+                    <div id="popular__item-popular" class="popular__item">
+
+                    </div>
+
+                </div>
+            </section>
+            <section class="new">
+                <div class="container">
+                    <h2 class="section__title">Новинки</h2>
+                    <div id="popular__item-new" class="popular__item new">
+
                     </div>
                 </div>
             </section>
-            <section class="news">
+            <section class="sale">
                 <div class="container">
-                    <div class="popular-blok">
-                        <h2 class="popular-blok__title section__title">Новинки</h2>
-                        <div class="popular-blok__product">
-                            <div class="product-item">
-                                <img src="./img/section/news/news1.webp" alt="" class="product-item-img">
-                                <div class="popular-blok__screen screen__new"> New </div>
-                                <div class="blor-product">
-                                    <h3 class="product-item__title">Париж</h3>
-                                    <span class="product-item__subtitle">монобукет из пионов</span>
-                                    <span class="item-info__product">
-                                        Цветы: Пионы розовые, пионы белые, Эвкалипт, дизайнерская пленка
-                                    </span>
-                                    <span class="product-item__price">3500₽</span>
-                                    <a href="#" class="product-btn btn-catalog">В корзину</a>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <img src="./img/section/news/news2.webp" alt="" class="product-item-img">
-                                <div class="popular-blok__screen screen__new"> New </div>
-                                <div class="blor-product">
-                                    <h3 class="product-item__title">Париж</h3>
-                                    <span class="product-item__subtitle">монобукет из пионов</span>
-                                    <span class="item-info__product">
-                                        Цветы: Пионы розовые, пионы белые, Эвкалипт, дизайнерская пленка
-                                    </span>
-                                    <span class="product-item__price">3500₽</span>
-                                    <a href="#" class="product-btn btn-catalog">В корзину</a>
-                                </div>
-                            </div>
-                            <div class="product-item item-product">
-                                <img src="./img/section/news/news3.webp" alt="" class="product-item-img">
-                                <div class="popular-blok__screen screen__new"> New </div>
-                                <div class="blor-product">
-                                    <h3 class="product-item__title">Париж</h3>
-                                    <span class="product-item__subtitle">монобукет из пионов</span>
-                                    <span class="item-info__product">
-                                        Цветы: Пионы розовые, пионы белые, Эвкалипт, дизайнерская пленка
-                                    </span>
-                                    <span class="product-item__price">3500₽</span>
-                                    <a href="#" class="product-btn btn-catalog">В корзину</a>
-                                </div>
-                            </div>
-                            <div class="product-item item-product">
-                                <img src="./img/section/news/news4.webp" alt="" class="product-item-img">
-                                <div class="popular-blok__screen screen__new"> New </div>
-                                <div class="blor-product">
-                                    <h3 class="product-item__title">Париж</h3>
-                                    <span class="product-item__subtitle">монобукет из пионов</span>
-                                    <span class="item-info__product">
-                                        Цветы: Пионы розовые, пионы белые, Эвкалипт, дизайнерская пленка
-                                    </span>
-                                    <span class="product-item__price">3500₽</span>
-                                    <a href="#" class="product-btn btn-catalog">В корзину</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="Sale">
-                <div class="container">
-                    <div class="popular-blok">
-                        <h2 class="popular-blok__title section__title">Акции</h2>
-                        <div class="popular-blok__product">
-                            <div class="product-item">
-                                <img src="./img/section/sale/sale1.webp" alt="" class="product-item-img">
-                                <div class="popular-blok__screen screen__sale">Sale</div>
-                                <div class="blor-product">
-                                    <h3 class="product-item__title">Париж</h3>
-                                    <span class="product-item__subtitle">монобукет из пионов</span>
-                                    <span class="item-info__product">
-                                        Цветы: Пионы розовые, пионы белые, Эвкалипт, дизайнерская пленка
-                                    </span>
-                                    <span class="product-item__price">3500₽</span>
-                                    <a href="#" class="product-btn btn-catalog">В корзину</a>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <img src="./img/section/sale/sale2.webp" alt="" class="product-item-img">
-                                <div class="popular-blok__screen screen__sale">Sale</div>
-                                <div class="blor-product">
-                                    <h3 class="product-item__title">Париж</h3>
-                                    <span class="product-item__subtitle">монобукет из пионов</span>
-                                    <span class="item-info__product">
-                                        Цветы: Пионы розовые, пионы белые, Эвкалипт, дизайнерская пленка
-                                    </span>
-                                    <span class="product-item__price">3500₽</span>
-                                    <a href="#" class="product-btn btn-catalog">В корзину</a>
-                                </div>
-                            </div>
-                            <div class="product-item item-product">
-                                <img src="./img/section/sale/sale3.webp" alt="" class="product-item-img">
-                                <div class="popular-blok__screen screen__sale">Sale</div>
-                                <div class="blor-product">
-                                    <h3 class="product-item__title">Париж</h3>
-                                    <span class="product-item__subtitle">монобукет из пионов</span>
-                                    <span class="item-info__product">
-                                        Цветы: Пионы розовые, пионы белые, Эвкалипт, дизайнерская пленка
-                                    </span>
-                                    <span class="product-item__price">3500₽</span>
-                                    <a href="#" class="product-btn btn-catalog">В корзину</a>
-                                </div>
-                            </div>
-                            <div class="product-item item-product">
-                                <img src="./img/section/sale/sale4.webp" alt="" class="product-item-img">
-                                <div class="popular-blok__screen screen__sale">Sale</div>
-                                <div class="blor-product">
-                                    <h3 class="product-item__title">Париж</h3>
-                                    <span class="product-item__subtitle">монобукет из пионов</span>
-                                    <span class="item-info__product">
-                                        Цветы: Пионы розовые, пионы белые, Эвкалипт, дизайнерская пленка
-                                    </span>
-                                    <span class="product-item__price">3500₽</span>
-                                    <a href="#" class="product-btn btn-catalog">В корзину</a>
-                                </div>
-                            </div>
-                        </div>
+                    <h2 class="section__title">Новинки</h2>
+                    <div id="popular__item-sale" class="popular__item sale">
+
                     </div>
                 </div>
             </section>
@@ -846,7 +699,14 @@
         </footer>
     </div>
 
+
+
+    <script src="js/data.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+
 </body>
 
 </html>
